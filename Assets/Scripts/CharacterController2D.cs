@@ -158,7 +158,8 @@ public class CharacterController2D : MonoBehaviour {
 		// check to see if scale x is right for the player
 		// if not, multiple by -1 which is an easy way to flip a sprite
 		if (((facingRight) && (localScale.x<0)) || ((!facingRight) && (localScale.x>0))) {
-			localScale.x *= -1;
+            localScale.x *= -1;
+            //transform.Rotate(0f, 180f, 0f);
 		}
 
 		// update the scale
